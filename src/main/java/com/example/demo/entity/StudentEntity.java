@@ -38,6 +38,17 @@ public class StudentEntity {
        public void setcreateAt(Date createAt){
         this.createAt=createAt;
        }
+       public  StudentEntity(int id,String username,String email,String password,Date createAt ){
+        this.id=id;
+        this.username=username;
+        this.email=email;
+        this.password=password;
+        this.createAt=createAt;
+       }
+       
+       public StudentEntity(){
+
+       }
 
 
 }
