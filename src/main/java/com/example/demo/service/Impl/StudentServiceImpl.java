@@ -8,12 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class StudentServiceImpl implements StudentService{
     @Autowired StudentRepository student;
       public  StudentEntity postdata(@RequestBody StudentEntity stu){
-         //save()
-         //findAll()
-         //findById()
-         //deleteById()
-         //existsByID()
-         return student.saveof()
+         return student.save(stu);
       }
 
 }
