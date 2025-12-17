@@ -1,6 +1,6 @@
 package com.example.demo.controller;
 
-import org.springframework.web.bind.annotation.Restcontroller;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.service.StudentService;
 import com.example.demo.entity.StudentEntity;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 
 
-@Restcontroller
+@RestController
 public class StudentController {
    @Autowired StudentService ser;
 
