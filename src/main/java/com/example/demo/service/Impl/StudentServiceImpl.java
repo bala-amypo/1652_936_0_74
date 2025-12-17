@@ -7,7 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 @Service
 public class StudentServiceImpl implements StudentService{
     @Autowired StudentRepository student;
-      public  StudentEntity postdata(@RequestBody StudentEntity stu){
+    @overriding
+      public  StudentEntity postdata( StudentEntity stu){
          return student.save(stu);
       }
 
