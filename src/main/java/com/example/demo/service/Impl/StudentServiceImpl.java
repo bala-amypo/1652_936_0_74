@@ -18,8 +18,8 @@ public class StudentServiceImpl implements StudentService{
       public List<StudentEntity>getAlldata(){
            return student.findAll();
       }
-      public String Deletedata(@PathVariale int id);
+      public String Deletedata( int id);
         student.deleteById(id);
-        return "Delete successfully";
+         return "Deleted sucessfully";
 
 }
