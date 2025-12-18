@@ -40,10 +40,10 @@ public class StudentEntity {
        public void setPassword(String password){
         this.password=password;
        }
-       public Date getcreateAt(){
+       public Date getCreateAt(){
         return createAt;
        }
-       public void setcreateAt(Date createAt){
+       public void setCreateAt(Date createAt){
         this.createAt=createAt;
        }
        public  StudentEntity(Integer id,String username,String email,String password,Date createAt ){
