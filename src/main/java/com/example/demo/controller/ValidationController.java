@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 @RestController
 public class ValidationController {
-   @AutoWired ValidationService service;
+   @Autowired ValidationService service;
 
    @PostMapping("/po")
    public ValidationEntity send(@Valid @RequestBody ValidationEntity valid){
