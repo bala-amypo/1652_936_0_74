@@ -28,7 +28,7 @@ public class StudentController {
    }
    @DeleteMapping("/delete/{id}")
     public String deleteval(@PathVariable int id){
-      return "Delete successfully";
+      return 
     }
    
 
