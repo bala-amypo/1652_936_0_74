@@ -35,7 +35,7 @@ public class StudentController {
     }
     @GetMapping("/find/{id}")
     public StudentEntity finddata(@PathVariable int id){
-    
-   
+    return ser.getdata(id);
+   }
 
 }
