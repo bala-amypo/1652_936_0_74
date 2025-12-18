@@ -5,12 +5,18 @@ import org.springframework.stereotype.Service;
 import com.example.demo.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.entity.StudentEntity;
+import java.util.List;
+
 @Service
 public class StudentServiceImpl implements StudentService{
     @Autowired StudentRepository student;
     @Override
       public  StudentEntity postdata(StudentEntity stu){
          return student.save(stu);
+      }
+      @Override
+      public List<StudentEntity>getAlldata(){
+           return student.findAll();
       }
 
 }
