@@ -3,9 +3,11 @@ package com.example.demo.controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.Valid;
+import jakarta.validation.Valid;
+import com.example.demo.service.ValidationService;
+import com.example.demo.entity.ValidationEntity;
 
-@Restcontroller
+@RestController
 public class ValidationController {
    @AutoWired ValidationService service;
 
