@@ -11,7 +11,7 @@ public class StudentEntity {
        @Id
        @GeneratedValue(strategy=GenerationType.IDENTITY)
        private Integer id;
-       private String Username;
+       private String username;
        private String email;
        private String password;
        private Date createAt;
@@ -23,21 +23,21 @@ public class StudentEntity {
         return id;
        }
        public String getUsername(){
-        return Username;
+        return username;
        }
        public void setUsername(String Username){
-        this.Username=Username;
+        this.username=username;
        }
-       public String getemail(){
+       public String getEmail(){
         return email;
        }
-       public void setemail(String email){
+       public void setEmail(String email){
         this.email=email;
        }
-       public String getpassword(){
+       public String getPassword(){
         return password;
        }
-       public void setpassword(String password){
+       public void setPassword(String password){
         this.password=password;
        }
        public Date getcreateAt(){
@@ -48,7 +48,7 @@ public class StudentEntity {
        }
        public  StudentEntity(Integer id,String username,String email,String password,Date createAt ){
         this.id=id;
-        this.Username=Username;
+        this.username=username;
         this.email=email;
         this.password=password;
         this.createAt=createAt;
