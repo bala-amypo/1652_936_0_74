@@ -23,10 +23,10 @@ public class StudentEntity {
         return id;
        }
        public String getUsername(){
-        return username;
+        return Username;
        }
-       public void setUsername(String username){
-        this.username=username;
+       public void setUsername(String Username){
+        this.Username=Username;
        }
        public String getemail(){
         return email;

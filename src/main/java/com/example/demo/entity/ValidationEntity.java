@@ -37,10 +37,10 @@ public class ValidationEntity {
         return id;
        }
        public String getUsername(){
-        return username;
+        return Username;
        }
-       public void setUsername(String username){
-        this.username=username;
+       public void setUsername(String Username){
+        this.Username=Username;
        }
        public String getemail(){
         return email;
@@ -67,7 +67,7 @@ public class ValidationEntity {
        @Size(min = 2,max = 8) @NotNull(message="Password is mandatory") String password,
        @Max(30) @Positive(message="Age must be positive") int age){
         this.id=id;
-        this.username=Username;
+        this.Username=Username;
         this.email=email;
         this.password=password;
         this.age=age;
