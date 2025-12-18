@@ -6,7 +6,7 @@ import com.example.demo.service.StudentService;
 import com.example.demo.entity.StudentEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-
+import java.util.List;
 
 
 
