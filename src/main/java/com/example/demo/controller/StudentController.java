@@ -24,11 +24,11 @@ public class StudentController {
    }
    @GetMapping("/get")
    public List<StudentEntity> getval(){
-     return ser.getAlldata();
+     return ser.getAlldata(id);
    }
    @DeleteMapping("/delete/{id}")
     public String deleteval(@PathVariable int id){
-      return 
+      return ser.Deletedata(id);
     }
    
 
