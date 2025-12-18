@@ -8,5 +8,6 @@ import java.util.List;
 public interface StudentService {
      StudentEntity postdata(@RequestBody StudentEntity stu);
      List<StudentEntity>getAlldata();
+     String Deletedata(int id)
 }
 
