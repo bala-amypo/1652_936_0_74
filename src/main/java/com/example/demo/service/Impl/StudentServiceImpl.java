@@ -23,6 +23,6 @@ public class StudentServiceImpl implements StudentService{
          return "Deleted sucessfully";
       }
       public StudentEntity getdata(int id){
-         return student.findById(id);
+         return student.findById(id).orElse(null);
       }
 }
