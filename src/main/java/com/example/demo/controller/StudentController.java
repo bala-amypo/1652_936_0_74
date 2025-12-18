@@ -18,8 +18,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 @RestController
 public class StudentController {
    @Autowired StudentService ser;
-
-
    @PostMapping("/post")
    public StudentEntity senddata(@RequestBody StudentEntity s){
      return ser.postdata(s);
