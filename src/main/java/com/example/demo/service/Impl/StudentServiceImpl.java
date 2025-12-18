@@ -27,7 +27,11 @@ public class StudentServiceImpl implements StudentService{
       public StudentEntity getdata(int id){
          return student.findById(id).orElse(null);
       }
-      public StudentEntity update(int id,StudentEntity enetity){
-         if(student)
+      public StudentEntity update(int id,StudentEntity entity){
+         if(student.existsById(id)){
+            entity.setId(id);
+            return student.save(entity);
+         }
+         return null;
       }
 }
