@@ -17,4 +17,7 @@ public class ValidationController {
    public ValidationEntity send(@Valid @RequestBody ValidationEntity valid){
     return service.postdata(valid);
    }
+    @GetMapping("/fi/{id}")
+    public StudentEntity finddata(@PathVariable int id){
+    return ser.getdata(id);
 }

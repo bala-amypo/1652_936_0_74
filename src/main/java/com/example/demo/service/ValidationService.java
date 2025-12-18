@@ -5,5 +5,5 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 public interface ValidationService{
     ValidationEntity postdata(@RequestBody ValidationEntity en);
-    
+    ValidationEntity getdata(int id);
 }
