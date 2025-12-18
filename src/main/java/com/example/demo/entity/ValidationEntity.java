@@ -54,10 +54,10 @@ public class ValidationEntity {
        public void setpassword(String password){
         this.password=password;
        }
-       public Integer getage(){
+       public int getage(){
         return age;
        }
-       public void setage(Integer age){
+       public void setage(int age){
         this.age=age;
        }
 
@@ -73,7 +73,7 @@ public class ValidationEntity {
         this.age=age;
         }
         public ValidationEntity(){
-            
+
         }
 
 
