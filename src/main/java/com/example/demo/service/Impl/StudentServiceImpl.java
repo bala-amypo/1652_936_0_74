@@ -18,11 +18,16 @@ public class StudentServiceImpl implements StudentService{
       public List<StudentEntity>getAlldata(){
            return student.findAll();
       }
+      @Override
       public String Deletedata( int id){
         student.deleteById(id);
          return "Deleted sucessfully";
       }
+      @Override
       public StudentEntity getdata(int id){
          return student.findById(id).orElse(null);
+      }
+      public StudentEntity update(int id,StudentEntity enetity){
+         if(student)
       }
 }
