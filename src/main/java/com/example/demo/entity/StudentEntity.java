@@ -25,7 +25,7 @@ public class StudentEntity {
        public String getUsername(){
         return username;
        }
-       public void setUsername(String Username){
+       public void setUsername(String username){
         this.username=username;
        }
        public String getEmail(){
@@ -50,7 +50,7 @@ public class StudentEntity {
        public StudentEntity(){
 
        }
-       
+
        public  StudentEntity(Integer id,String username,String email,String password,Date createAt ){
         this.id=id;
         this.username=username;
