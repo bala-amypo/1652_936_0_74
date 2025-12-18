@@ -19,15 +19,15 @@ public class ValidationEntity {
    @GeneratedValue(strategy=GenerationType.IDENTITY)
    private Long id;
    @NotNull
-   @Size(min = 2,max = 10,message = "must be 2 to 10 character");
+   @Size(min = 2,max = 10,message = "must be 2 to 10 character")
    private String username;
-   @Email(message="Email is valid");
+   @Email(message="Email is valid")
    private String email;
-   @Size(min = 2,max = 8);
-   @NotNull(message="Password is mandatory");
+   @Size(min = 2,max = 8)
+   @NotNull(message="Password is mandatory")
    private String password;
-   @Max(30);
-   @Positive(message="Age must be positive");
+   @Max(30)
+   @Positive(message="Age must be positive")
    private Integer age;
 
    public void setId(Long id){
