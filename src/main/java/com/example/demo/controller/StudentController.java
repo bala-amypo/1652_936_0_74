@@ -33,6 +33,9 @@ public class StudentController {
     public String deleteval(@PathVariable int id){
       return ser.Deletedata(id);
     }
+    @GetMapping("/find/{id}")
+    public StudentEntity finddata(@PathVariable int id){
+    
    
 
 }

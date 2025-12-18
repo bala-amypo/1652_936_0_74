@@ -9,5 +9,6 @@ public interface StudentService {
      StudentEntity postdata(@RequestBody StudentEntity stu);
      List<StudentEntity>getAlldata();
      String Deletedata(int id);
+     StudentEntity getdata(int id);
 }
 
