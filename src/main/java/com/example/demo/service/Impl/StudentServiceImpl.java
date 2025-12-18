@@ -19,7 +19,7 @@ public class StudentServiceImpl implements StudentService{
            return student.findAll();
       }
       public String Deletedata(@PathVariale int id);
-        stuydent.deleteById()
+        student.deleteById(id);
         return "Delete successfully";
 
 }
