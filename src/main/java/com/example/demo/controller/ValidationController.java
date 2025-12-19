@@ -9,7 +9,7 @@ import com.example.demo.service.ValidationService;
 import com.example.demo.entity.ValidationEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-
+import org.springframework.web.bind.annotation.PathVariable;
 @RestController
 public class ValidationController {
    @Autowired ValidationService service;
