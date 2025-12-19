@@ -1,6 +1,8 @@
 package com.example.demo.entity;
 
 import jakarta.persistence.Entity;
+import lombok.Data;
+import lombok
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -14,6 +16,9 @@ import jakarta.validation.constraints.Positive;
 
 
 @Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ValidationEntity {
    @Id
    @GeneratedValue(strategy=GenerationType.IDENTITY)
