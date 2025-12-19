@@ -28,8 +28,10 @@ public class TimestampEntity {
 
 
      @PrePersist
-     public void oncreate(){
-         
+     public void Oncreate(){
+         LocalDateTime now=new LocalDateTime();
+         this.createAt=now;
+         this.updateAt=now;
 
      }
 }
