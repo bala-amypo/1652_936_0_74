@@ -10,7 +10,7 @@ public class TimestampController {
    @Autowired TimestampService service;
 
    @PostMapping("/po")
-   public Entity send(@Valid @RequestBody ValidationEntity valid){
+   public TimestampEntity send(@Valid @RequestBody TimestampEntity valid){
     return service.senddata(valid);
    }
 
