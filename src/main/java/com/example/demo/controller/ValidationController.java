@@ -8,6 +8,7 @@ import jakarta.validation.Valid;
 import com.example.demo.service.ValidationService;
 import com.example.demo.entity.ValidationEntity;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @RestController
 public class ValidationController {
