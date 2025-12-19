@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import com.example.demo.service.TimestampService;
 import com.example.demo.entity.TimestampEntity;
+import org.springframework.web.bind.annotation.RestController;
 
 
 
