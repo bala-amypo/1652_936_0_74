@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 public class StudentDetailsController {
-   @Autowired StudentService ser;
+   @Autowired StudentDetailsService ser;
    @PostMapping("/p")
    public StudentDetailsEntity send(@RequestBody StudentDetailsEntity s){
      return ser.sd(s);
