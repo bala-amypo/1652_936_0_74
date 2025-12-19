@@ -16,7 +16,7 @@ public class TimestampController {
 
    @PostMapping("/o")
    public TimestampEntity send( @RequestBody TimestampEntity valid){
-    return service.senddata(valid);
+    return service.sended(valid);
    }
 
 }
