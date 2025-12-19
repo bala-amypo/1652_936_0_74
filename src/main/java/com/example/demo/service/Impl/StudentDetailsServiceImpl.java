@@ -9,15 +9,12 @@ import com.example.demo.repository.StudentDetailsRepository;
 
 @Service
 public class StudentDetailsServiceImpl implements StudentDetailsService {
-    @Autowired StudentRepository validation;
+    @Autowired StudentDetailsRepository val;
      
      @Override
-     public ValidationEntity senddata( ValidationEntity en){
-         return validation.save(en);
+     public StudentDetailsEntity sd( StudentDeatilsEntity st){
+         return val.save(st);
      }
      
-     @Override
-     public ValidationEntity get(Long id){
-        return validation.findById(id).orElseThrow(()->new ValidationException("Invalid id"+id));
-     }
+     
 }
