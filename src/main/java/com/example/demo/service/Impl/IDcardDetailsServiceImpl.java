@@ -12,7 +12,7 @@ public class IDcardDetailsServiceImpl implements IDcardDetailsService {
     @Autowired IDcardDetailsRepository vl;
      
      @Override
-     public StudentDetailsEntity s( StudentDeatilsEntity n){
+     public IDcardDetailsEntity s( StudentDeatilsEntity n){
          return vl.save(n);
      }
      
