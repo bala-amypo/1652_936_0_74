@@ -4,5 +4,6 @@ import org.springframework.web.bind.annotation.RestContollerAdvice;
 
 @RestControllerAdvice
 public class GlobalException {
-
+  @ExceptionHandler(ValidationException.class)
+  public ResponseBody<String>
 }
