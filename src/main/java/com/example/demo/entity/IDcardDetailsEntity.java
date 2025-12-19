@@ -18,5 +18,6 @@ public class IDcardDetails {
      @Id
      @GeneratedValue(strategy=GenerationType.IDENTITY)
      private Integer id;
-     private String department;
+     private String cardnumber;
+     private String studentid;
 }
