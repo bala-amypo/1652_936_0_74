@@ -9,6 +9,7 @@ import java.time.LocalDateTime;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.PrePersist;
 
 
 @Entity
@@ -24,4 +25,11 @@ public class TimestampEntity {
      private String password;
      private LocalDateTime createAt;
      private LocalDateTime updateAt;
+
+
+     @PrePersist
+     public void oncreate(){
+         
+
+     }
 }
