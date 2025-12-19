@@ -4,6 +4,6 @@ import com.example.demo.entity.StudentDetailsEntity;
 
 
 public interface StudentDetailsService{
-    StudentDetailsEntity sd(Entity en);
+    StudentDetailsEntity sd(StudentDetailsEntity st);
     
 }
