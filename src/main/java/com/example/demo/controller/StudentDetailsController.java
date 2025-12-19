@@ -19,24 +19,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 public class StudentDetailsController {
    @Autowired StudentService ser;
    @PostMapping("/p")
-   public StudentEntity senddata(@RequestBody StudentEntity s){
+   public StudentEntity sd(@RequestBody StudentEntity s){
      return ser.postdata(s);
         
-   }
-   @GetMapping("/get")
-   public List<StudentEntity> getval(){
-     return ser.getAlldata();
-   }
-   @DeleteMapping("/delete/{id}")
-    public String deleteval(@PathVariable int id){
-      return ser.Deletedata(id);
-    }
-    @GetMapping("/find/{id}")
-    public StudentEntity finddata(@PathVariable int id){
-    return ser.getdata(id);
-   }
-   @PutMapping("/put/{id}")
-    public StudentEntity putval(@PathVariable int id,@RequestBody StudentEntity entity){
-    return ser.update(id,entity);
-    }
+   
 }
