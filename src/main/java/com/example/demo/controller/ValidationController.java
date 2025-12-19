@@ -19,7 +19,7 @@ public class ValidationController {
     return service.senddata(valid);
    }
     @GetMapping("/fi/{id}")
-    public Entity finddata(@PathVariable int id){
-    return service.get(id);
+    public ValidationEntity finddata(@PathVariable Long id){
+     return service.get(id);
     }
 }
