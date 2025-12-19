@@ -19,8 +19,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 public class StudentDetailsController {
    @Autowired StudentService ser;
    @PostMapping("/p")
-   public StudentEntity sd(@RequestBody StudentEntity s){
-     return ser.postdata(s);
-        
+   public StudentDetailsEntity send(@RequestBody StudentDetailsEntity s){
+     return ser.sd(s);
+   }    
    
 }
