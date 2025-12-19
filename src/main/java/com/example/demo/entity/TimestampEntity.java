@@ -10,6 +10,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.PrePersist;
+import jakarta.persistence.PreUpdate;
 
 
 @Entity
@@ -29,9 +30,11 @@ public class TimestampEntity {
 
      @PrePersist
      public void Oncreate(){
-         LocalDateTime now=new LocalDateTime();
+         LocalDateTime now=LocalDateTime().now();
          this.createAt=now;
          this.updateAt=now;
 
      }
+     @PreUpdate
+     public void Onu
 }
