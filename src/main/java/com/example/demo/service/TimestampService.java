@@ -1,12 +1,9 @@
 package com.example.demo.service;
 
+import com.example.demo.entity.TimestampEntity;
 
-@Service
-public class TimestampServiceImpl implements TimestampService {
-    @Autowired TimestampRepository t;
-     
-     @Override
-     public TimestampEntity senddata( TimestampEntity e){
-         return t.save(e);
-     }
+
+public interface TimestampService{
+    TimestampEntity senddata(TimestampEntity en);
+    TimestampEntity get(Long id);
 }
