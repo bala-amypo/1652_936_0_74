@@ -12,11 +12,11 @@ public class ValidationServiceImpl implements ValidationService {
     @Autowired ValidationRepository validation;
      
      @Override
-     public ValidationEntity postdata( ValidationEntity en){
+     public ValidationEntity senddata( ValidationEntity en){
          return validation.save(en);
      }
      
-     public ValidationEntity getdata(Long id){
+     public ValidationEntity get(Long id){
         return validation.findById(id).orElseThrow(()->new ValidationException("Invalid id"+id));
      }
 }
