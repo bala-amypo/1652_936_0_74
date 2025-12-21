@@ -10,10 +10,6 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.JoinColumn;
-
-
-
-
 @Entity
 @Data
 @AllArgsConstructor
